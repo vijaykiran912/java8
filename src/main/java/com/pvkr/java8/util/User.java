@@ -1,4 +1,4 @@
-package com.pvkr.java8.method_references;
+package com.pvkr.java8.util;
 
 import lombok.Data;
 

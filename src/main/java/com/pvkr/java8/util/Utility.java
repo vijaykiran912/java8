@@ -1,7 +1,9 @@
-package com.pvkr.java8.lambda_expressions;
+package com.pvkr.java8.util;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.pvkr.java8.domain.Person;
 
 public class Utility {
 

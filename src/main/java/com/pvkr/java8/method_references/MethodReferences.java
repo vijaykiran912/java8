@@ -3,6 +3,9 @@ package com.pvkr.java8.method_references;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.pvkr.java8.util.User;
+import com.pvkr.java8.util.UserCheck;
+
 /**
  * @author vipothamse
  * 
@@ -89,7 +92,9 @@ public class MethodReferences {
 		long count = list.stream().filter(String::isEmpty).count();
 		System.out.println("Count of Real User's: " + count);
 
-		/*long userCount = userList.stream().filter(User::isUserReal).count();
-		System.out.println("Count of Real User's: " + count);*/
+		//Arbitrary Object
+		UserCheck userCheck = new UserCheck();
+		long userCount = userList.stream().filter(userCheck::isUserReal).count();
+		System.out.println("Count of User Real User's: " + userCount);
 	}
 }

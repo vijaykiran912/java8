@@ -1,4 +1,4 @@
-package com.pvkr.java8.lambda_expressions;
+package com.pvkr.java8.domain;
 
 import lombok.Data;
 
