@@ -23,7 +23,11 @@ public class User {
 		return userName.length() == 7;
 	}
 
-	public boolean isUserReal(User user) {
-		return user.getUserName().length() == 7;
+	public boolean isUserReal() {
+		return this.getUserName().length() == 7;
+	}
+
+	public void printUser() {
+
 	}
 }
