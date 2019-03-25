@@ -16,6 +16,7 @@ import java.util.Set;
 import java.util.function.Function;
 
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableSet;
 import com.pvkr.java8.domain.Person;
 import com.pvkr.java8.util.Utility;
 
@@ -168,6 +169,11 @@ public class Stream_Collect {
 
 		assertThat(partitionResult).containsEntry(true, new ArrayList<String>(Arrays.asList("ccc")))
 				.containsEntry(false, new ArrayList<String>(Arrays.asList("a", "bb", "dd")));
-
+		
+		List<String> givenArrList = Arrays.asList("a", "bb", "ccc", "dddd");
+		 
+		ImmutableSet<String> resultImmutableSet = givenArrList.stream()
+		  .collect(ImmutableSetCollector.toImmutableSet());
+		System.out.println("11. Collectors.maxBy()/minBy(): " + resultImmutableSet);
 	}
 }
