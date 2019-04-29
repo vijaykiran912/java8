@@ -1,8 +1,10 @@
 package com.pvkr.java8.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class Person {
 
 	public Person(String name, int age, Sex gender, String emailAddress) {

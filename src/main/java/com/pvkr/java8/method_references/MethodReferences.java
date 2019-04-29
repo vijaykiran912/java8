@@ -95,4 +95,5 @@ public class MethodReferences {
 		long userCount = userList.stream().filter(User::isUserReal).count();
 		System.out.println("Count of User Real User's: " + userCount);
 	}
+
 }
